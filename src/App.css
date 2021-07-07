@@ -1,0 +1,160 @@
+.container {
+  width: 1024px;
+  height: 100%;
+  margin: auto;
+}
+
+.header {
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.header > span {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  margin: 30px;
+}
+
+.header > input {
+  background: transparent;
+  border-color: white;
+  border-style: solid;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  border-width: 5px;
+  font-weight: bold;
+  box-shadow: none;
+  font-size: 25px;
+  color: white;
+  outline: none;
+  height: 50px;
+  width: 60%;
+}
+
+.header > input::placeholder {
+  font-weight: bold;
+  padding-left: 5px;
+  font-size: 25px;
+  color: white;
+}
+
+.emoji-logo {
+  margin: 50px 0;
+  width: 500px;
+}
+
+.line-container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.line {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+  background-color: #fcfbfb;
+  align-items: center;
+  border-radius: 10px;
+  padding-left: 10px;
+  position: relative;
+  font-size: 25px;
+  margin: 10px 0;
+  display: flex;
+  height: 60px;
+  width: 60%;
+}
+
+.line > span {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.line:hover {
+  background-color: #ecf0f1;
+  cursor: pointer;
+}
+
+.copy-span {
+  position: absolute;
+  right: 20px;
+}
+
+@media (max-width: 1054px) {
+  .container {
+    margin: 0 30px;
+    width: auto;
+  }
+  .header > span {
+    font-size: 40px;
+    margin: 30px 0;
+  }
+
+  .header > input {
+    font-size: 15px;
+    height: 35px;
+  }
+
+  .line {
+    font-size: 18px;
+    margin: 10px 0;
+    height: 45px;
+  }
+
+  .footer > div {
+    justify-content: space-evenly;
+    font-size: 14px;
+    display: flex;
+    width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: auto;
+  }
+  .header > span {
+    font-size: 30px;
+    margin: 30px 0;
+  }
+
+  .header > input {
+    font-size: 12px;
+    height: 30px;
+  }
+
+  .line {
+    font-size: 20px;
+    margin: 10px 0;
+    height: 40px;
+  }
+
+  .footer > div {
+    justify-content: space-evenly;
+    font-size: 12px;
+    display: flex;
+    width: 300px;
+  }
+}
+
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
